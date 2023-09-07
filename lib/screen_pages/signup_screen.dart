@@ -113,7 +113,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             SizedBox(height: 20.h),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 10.w),
-                              child: NameField(nameController: _nameController),
+                              child: NameField(
+                                nameController: _nameController,
+                                hintText: 'Enter full name',
+                                labelText: 'Name',
+                              ),
                             ),
                             SizedBox(height: 20.h),
                             Padding(

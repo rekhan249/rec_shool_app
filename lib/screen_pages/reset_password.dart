@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ResetPassword extends StatefulWidget {
+  static const String routeName = '/reset-password';
   const ResetPassword({super.key});
 
   @override

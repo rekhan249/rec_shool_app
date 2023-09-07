@@ -5,9 +5,13 @@ class NameField extends StatelessWidget {
   const NameField({
     super.key,
     required TextEditingController nameController,
+    required this.hintText,
+    required this.labelText,
   }) : _nameController = nameController;
 
   final TextEditingController _nameController;
+  final String hintText;
+  final String labelText;
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +20,8 @@ class NameField extends StatelessWidget {
       keyboardType: TextInputType.name,
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        hintText: 'Enter full name ',
-        label: Text('User name',
+        hintText: hintText,
+        label: Text(labelText,
             style: TextStyle(fontSize: 16.sp, color: Colors.black)),
         prefixIcon: const Icon(Icons.person, color: Colors.black),
         enabledBorder: OutlineInputBorder(

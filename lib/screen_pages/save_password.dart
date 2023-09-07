@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
 class SavePassword extends StatefulWidget {
+  static const String routeName = '/save-password';
   const SavePassword({super.key});
 
   @override
