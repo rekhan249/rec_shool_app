@@ -1,3 +1,4 @@
+import 'package:fec_app/screen_pages/events.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,7 +19,9 @@ class _EventTitleState extends State<EventTitle> {
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 25, 74, 159),
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.popAndPushNamed(context, EventScreen.routeName);
+              },
               icon: const Icon(Icons.arrow_back_ios, color: Colors.white)),
           title: ListTile(
             title: Text(

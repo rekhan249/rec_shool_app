@@ -31,24 +31,27 @@ class _DashBoardState extends State<DashBoard> {
                   clipper: CurvedBottomClipper2(),
                   child: Container(
                     color: Colors.amber,
-                    height: 225.h,
+                    height: 210.h,
                   ),
                 ),
                 Positioned(
                   left: 0,
-                  top: 0,
+                  top: -20,
                   child: Stack(
                     children: [
-                      ClipPath(
-                        clipper: CurvedBottomClipper(),
-                        child: Container(
-                          color: Colors.amber,
-                          height: 215.h,
-                          width: 400.w,
-                          child: Image.asset(
-                            'assets/images/dashboard.png',
-                            fit: BoxFit.cover,
-                            alignment: const FractionalOffset(0, 1),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 80.w),
+                        child: ClipPath(
+                          clipper: CurvedBottomClipper(),
+                          child: Container(
+                            color: Colors.amber,
+                            height: 210.h,
+                            width: 400.w,
+                            child: Image.asset(
+                              'assets/images/dashboard.png',
+                              fit: BoxFit.cover,
+                              alignment: const FractionalOffset(0, -0.5),
+                            ),
                           ),
                         ),
                       ),
@@ -76,7 +79,7 @@ class _DashBoardState extends State<DashBoard> {
                           )),
                       Positioned(
                         left: 20.w,
-                        top: 180.h,
+                        top: 175.h,
                         child: Container(
                           height: 35.h,
                           width: 35.w,
@@ -95,7 +98,7 @@ class _DashBoardState extends State<DashBoard> {
                       ),
                       Positioned(
                         left: 95.w,
-                        top: 195.h,
+                        top: 193.h,
                         child: Container(
                           height: 35.h,
                           width: 35.w,
@@ -114,7 +117,7 @@ class _DashBoardState extends State<DashBoard> {
                       ),
                       Positioned(
                           left: 175.w,
-                          top: 195.h,
+                          top: 191.h,
                           child: Container(
                               height: 35.h,
                               width: 35.w,
@@ -129,8 +132,8 @@ class _DashBoardState extends State<DashBoard> {
                                   icon: Image.asset('assets/images/phone.png',
                                       color: Colors.white)))),
                       Positioned(
-                        left: 255.w,
-                        top: 170.h,
+                        left: 250.w,
+                        top: 173.h,
                         child: Container(
                           height: 35.h,
                           width: 35.w,
@@ -149,7 +152,7 @@ class _DashBoardState extends State<DashBoard> {
                       ),
                       Positioned(
                         left: 310.w,
-                        top: 135.h,
+                        top: 136.h,
                         child: Container(
                           height: 35.h,
                           width: 35.w,

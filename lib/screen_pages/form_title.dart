@@ -1,3 +1,4 @@
+import 'package:fec_app/screen_pages/forms.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,7 +18,9 @@ class _FormTitleState extends State<FormTitle> {
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 25, 74, 159),
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.popAndPushNamed(context, FormScreen.routeName);
+              },
               icon: const Icon(Icons.arrow_back_ios, color: Colors.white)),
           title: ListTile(
             title: Text(

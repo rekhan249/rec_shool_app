@@ -26,7 +26,7 @@ class _EventScreenState extends State<EventScreen> {
                     clipper: CurvedBottomClipper4(),
                     child: Container(
                       color: Colors.amber,
-                      height: 210.h,
+                      height: 140.h,
                     ),
                   ),
                   Positioned(
@@ -52,7 +52,7 @@ class _EventScreenState extends State<EventScreen> {
                             left: 130.w,
                             right: 130.w,
                             child: Text(
-                              'Notices',
+                              'Events',
                               style: TextStyle(
                                   fontSize: 25.sp,
                                   fontWeight: FontWeight.bold,

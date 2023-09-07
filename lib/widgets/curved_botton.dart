@@ -31,13 +31,13 @@ class CurvedBottomClipper extends CustomClipper<Path> {
 class CurvedBottomClipper2 extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    final roundingHeight = size.height * 3 / 5;
+    final roundingHeight = size.height * 2 / 3;
 
     final filledRectangle =
         Rect.fromLTRB(0, 0, size.width, size.height - roundingHeight);
 
-    final roundingRectangle = Rect.fromLTRB(
-        -80, size.height - roundingHeight * 2, size.width + 5, size.height);
+    final roundingRectangle = Rect.fromLTRB(-70,
+        size.height - roundingHeight * 2, size.width + 5, size.height - 10);
 
     final path = Path();
     path.addRect(filledRectangle);
