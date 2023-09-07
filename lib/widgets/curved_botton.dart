@@ -37,7 +37,7 @@ class CurvedBottomClipper2 extends CustomClipper<Path> {
         Rect.fromLTRB(0, 0, size.width, size.height - roundingHeight);
 
     final roundingRectangle = Rect.fromLTRB(
-        -70, size.height - roundingHeight * 2, size.width + 10, size.height);
+        -80, size.height - roundingHeight * 2, size.width + 5, size.height);
 
     final path = Path();
     path.addRect(filledRectangle);
@@ -63,7 +63,7 @@ class CurvedBottomClipper3 extends CustomClipper<Path> {
         Rect.fromLTRB(0, 0, size.width, size.height - roundingHeight);
 
     final roundingRectangle = Rect.fromLTRB(
-        -100, size.height - roundingHeight * 2, size.width + 75, size.height);
+        -120, size.height - roundingHeight * 2, size.width + 50, size.height);
 
     final path = Path();
     path.addRect(filledRectangle);
@@ -83,13 +83,13 @@ class CurvedBottomClipper3 extends CustomClipper<Path> {
 class CurvedBottomClipper4 extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    final roundingHeight = size.height * 6 / 2;
+    final roundingHeight = size.height * 4 / 2;
 
     final filledRectangle =
         Rect.fromLTRB(0, 0, size.width, size.height - roundingHeight);
 
     final roundingRectangle = Rect.fromLTRB(
-        -100, size.height - roundingHeight * 2, size.width + 75, size.height);
+        -80, size.height - roundingHeight * 2, size.width + 50, size.height);
 
     final path = Path();
     path.addRect(filledRectangle);

@@ -31,7 +31,7 @@ class _DashBoardState extends State<DashBoard> {
                   clipper: CurvedBottomClipper2(),
                   child: Container(
                     color: Colors.amber,
-                    height: 210.h,
+                    height: 225.h,
                   ),
                 ),
                 Positioned(
@@ -43,15 +43,129 @@ class _DashBoardState extends State<DashBoard> {
                         clipper: CurvedBottomClipper(),
                         child: Container(
                           color: Colors.amber,
-                          height: 200.h,
+                          height: 215.h,
                           width: 400.w,
                           child: Image.asset(
                             'assets/images/dashboard.png',
                             fit: BoxFit.cover,
-                            alignment: const FractionalOffset(0, 0),
+                            alignment: const FractionalOffset(0, 1),
                           ),
                         ),
                       ),
+                      Positioned(
+                          top: 80.h,
+                          left: 130.w,
+                          right: 130.w,
+                          child: Text(
+                            'username',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.bold),
+                          )),
+                      Positioned(
+                          top: 100.h,
+                          left: 80.w,
+                          right: 70.w,
+                          child: Text(
+                            'Welcome to FEC',
+                            style: TextStyle(
+                                fontSize: 25.sp,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          )),
+                      Positioned(
+                        left: 20.w,
+                        top: 180.h,
+                        child: Container(
+                          height: 35.h,
+                          width: 35.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100.r),
+                            border: Border.all(width: 05, color: Colors.amber),
+                            color: const Color.fromARGB(255, 25, 74, 159),
+                          ),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Image.asset(
+                                'assets/images/phone.png',
+                                color: Colors.white,
+                              )),
+                        ),
+                      ),
+                      Positioned(
+                        left: 95.w,
+                        top: 195.h,
+                        child: Container(
+                          height: 35.h,
+                          width: 35.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100.r),
+                            border: Border.all(width: 05, color: Colors.amber),
+                            color: const Color.fromARGB(255, 25, 74, 159),
+                          ),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Image.asset(
+                                'assets/images/phone.png',
+                                color: Colors.white,
+                              )),
+                        ),
+                      ),
+                      Positioned(
+                          left: 175.w,
+                          top: 195.h,
+                          child: Container(
+                              height: 35.h,
+                              width: 35.w,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100.r),
+                                border:
+                                    Border.all(width: 05, color: Colors.amber),
+                                color: const Color.fromARGB(255, 25, 74, 159),
+                              ),
+                              child: IconButton(
+                                  onPressed: () {},
+                                  icon: Image.asset('assets/images/phone.png',
+                                      color: Colors.white)))),
+                      Positioned(
+                        left: 255.w,
+                        top: 170.h,
+                        child: Container(
+                          height: 35.h,
+                          width: 35.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100.r),
+                            border: Border.all(width: 05, color: Colors.amber),
+                            color: const Color.fromARGB(255, 25, 74, 159),
+                          ),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Image.asset(
+                                'assets/images/phone.png',
+                                color: Colors.white,
+                              )),
+                        ),
+                      ),
+                      Positioned(
+                        left: 310.w,
+                        top: 135.h,
+                        child: Container(
+                          height: 35.h,
+                          width: 35.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100.r),
+                            border: Border.all(width: 05, color: Colors.amber),
+                            color: const Color.fromARGB(255, 25, 74, 159),
+                          ),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Image.asset(
+                                'assets/images/phone.png',
+                                color: Colors.white,
+                              )),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -60,7 +174,7 @@ class _DashBoardState extends State<DashBoard> {
             SizedBox(height: 40.h),
             Center(
                 child: Text(
-              'DashBoard',
+              'Dashboard',
               style: TextStyle(
                   fontSize: 30.sp,
                   color: const Color.fromARGB(255, 25, 74, 159),
@@ -151,31 +265,3 @@ class _DashBoardState extends State<DashBoard> {
     ));
   }
 }
-
-/*
-
- Positioned(
-                          top: 60.h,
-                          left: 130.w,
-                          right: 130.w,
-                          child: Text(
-                            'username',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18.sp,
-                                fontWeight: FontWeight.bold),
-                          )),
-                      Positioned(
-                          top: 80.h,
-                          left: 80.w,
-                          right: 70.w,
-                          child: Text(
-                            'Welcome to FEC',
-                            style: TextStyle(
-                                fontSize: 25.sp,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
-                          )),
-                     
-
-*/

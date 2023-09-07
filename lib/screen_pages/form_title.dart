@@ -39,6 +39,7 @@ class _FormTitleState extends State<FormTitle> {
         body: SingleChildScrollView(
             child: Column(
           children: [
+            SizedBox(height: 10.h),
             Container(
                 decoration: BoxDecoration(
                     color: Colors.grey.shade200,

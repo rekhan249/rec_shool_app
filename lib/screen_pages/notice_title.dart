@@ -1,4 +1,3 @@
-import 'package:fec_app/widgets/curved_botton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -40,6 +39,7 @@ class _NoticeTitleState extends State<NoticeTitle> {
       body: SingleChildScrollView(
           child: Column(
         children: [
+          SizedBox(height: 10.h),
           Container(
               decoration: BoxDecoration(
                   color: Colors.grey.shade200,

@@ -3,13 +3,8 @@ import 'package:fec_app/providers/password_provider.dart';
 import 'package:fec_app/providers/signup_provider.dart';
 import 'package:fec_app/providers/switching_provvider.dart';
 import 'package:fec_app/routes_manage/page_route.dart';
-import 'package:fec_app/screen_pages/child_info.dart';
 import 'package:fec_app/screen_pages/dashboard.dart';
-import 'package:fec_app/screen_pages/event_title.dart';
-import 'package:fec_app/screen_pages/events.dart';
 import 'package:fec_app/screen_pages/notices.dart';
-
-import 'package:fec_app/screen_pages/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
@@ -43,7 +38,7 @@ class MyApp extends StatelessWidget {
               useMaterial3: true,
             ),
             onGenerateRoute: (settings) => generateRoutes(settings),
-            home: const DashBoard(),
+            home: const NoticesScreen(),
           )),
     );
   }
