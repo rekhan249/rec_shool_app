@@ -35,7 +35,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
             Stack(
               children: [
                 ClipPath(
-                  clipper: CurvedBottomClipper2(),
+                  clipper: CurvedBottomClipper5(),
                   child: Container(
                     color: Colors.amber,
                     height: 210.h,
@@ -55,7 +55,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                           child: Image.asset(
                             'assets/images/other.jpg',
                             fit: BoxFit.cover,
-                            alignment: const FractionalOffset(1, 0),
+                            alignment: const FractionalOffset(1.5, 0.5),
                           ),
                         ),
                       ),

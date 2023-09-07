@@ -110,7 +110,7 @@ class _DashBoardState extends State<DashBoard> {
                           child: IconButton(
                               onPressed: () {},
                               icon: Image.asset(
-                                'assets/images/phone.png',
+                                'assets/images/mail.png',
                                 color: Colors.white,
                               )),
                         ),
@@ -129,7 +129,8 @@ class _DashBoardState extends State<DashBoard> {
                               ),
                               child: IconButton(
                                   onPressed: () {},
-                                  icon: Image.asset('assets/images/phone.png',
+                                  icon: Image.asset(
+                                      'assets/images/location.png',
                                       color: Colors.white)))),
                       Positioned(
                         left: 250.w,
@@ -145,7 +146,7 @@ class _DashBoardState extends State<DashBoard> {
                           child: IconButton(
                               onPressed: () {},
                               icon: Image.asset(
-                                'assets/images/phone.png',
+                                'assets/images/childreninfo.png',
                                 color: Colors.white,
                               )),
                         ),
@@ -164,7 +165,7 @@ class _DashBoardState extends State<DashBoard> {
                           child: IconButton(
                               onPressed: () {},
                               icon: Image.asset(
-                                'assets/images/phone.png',
+                                'assets/images/profile.png',
                                 color: Colors.white,
                               )),
                         ),
